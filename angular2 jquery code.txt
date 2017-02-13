@@ -1,0 +1,27 @@
+import { Component,ElementRef, OnInit } from '@angular/core';
+
+declare var $: any;
+
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
+})
+export class HomeComponent implements OnInit {
+
+  constructor(private elRef: ElementRef) { }
+
+  ngOnInit(): any {
+
+    $(this. elRef.nativeElement)
+
+    $( document ).ready(function() { //------start-----
+
+  
+ 
+    }); //-----End------
+
+
+  }
+
+}
